@@ -21,7 +21,7 @@ What is this project about. Who is the User? What is the purpose of this applica
 
 #### Technologies
 
-- Technology 1
+- MongoDB
 - Technology 2
 
 ---
