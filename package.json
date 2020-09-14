@@ -1,7 +1,7 @@
 {
   "name": "mongoose_skeleton",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Project Image](project-image-url)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +15,13 @@
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FisherE20/Fitness-Tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FisherE20/Fitness-Tracker/issues"
+  },
+  "homepage": "https://github.com/FisherE20/Fitness-Tracker#readme"
 }
