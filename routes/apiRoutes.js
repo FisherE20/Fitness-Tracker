@@ -1,8 +1,11 @@
-const { Db } = require("mongodb")
+const{data} = require("express")
+const db = require("../models")
+
+module.exports = function(app) {
 
 // show the stats of all past workouts on stat page
 app.get("/api/workouts", (req,res) => {
-    Db.Workout.find({}).then(function (data) {
+    db.Workout.find({}).then(function (data) {
         res.json(data);
     })
 });
@@ -13,9 +16,21 @@ app.get("/stats", (req,res) => {
 });
 
 // update a workout by id
-app.put("/api/workouts/:id",(req,res) => {
+app.put("/api/workouts/:id", (req, res) => {
+    let input = req.body;
+    
     db.Workout.findByIdAndUpdate(req.parms.id,{
-        $push: {exercises:req.body}
+        $push: {
+            exercises:[{
+                "type": input.type,
+                "name": input.name,
+                "duration": input.duration,
+                "distance": input.diration,
+                "weight": input.weight,
+                "reps": input.reps,
+                "sets": input.sets
+            }]
+        }
     }).then(function (data) {
         res.json(data);
     })
@@ -44,3 +59,5 @@ app.get("all", function(req,res) {
             }
         }
     });
+};
+

@@ -47,9 +47,6 @@ What is this project about. Who is the User? What is the purpose of this applica
 ---
 
 ## License
-
-MIT License
-
 Copyright(c) [2020] [Erin K Fisher]
 
 [Back To The Top](#Fitness-Tracker)
@@ -58,7 +55,7 @@ Copyright(c) [2020] [Erin K Fisher]
 
 ## Author Info
 
-- GitHub - [userName](url)
-- Website - [userName](url) 
+- GitHub - [FisherE20](https://github.com/FisherE20/Fitness-Tracker)
+- Website - [FisherE20](https://fishere20.github.io/Responsive-Portfolio/) 
 
 [Back To The Top](#Fitness-Tracker)
