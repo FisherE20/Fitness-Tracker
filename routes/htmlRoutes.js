@@ -6,6 +6,6 @@ module.exports = function(app){
     })
 
     app.get("/stats",function(req, res) {
-        res.sendFile(path.join("../public/stats.html"))
+        res.sendFile(path.join(_dirname, "../public/stats.html"))
     })
 };

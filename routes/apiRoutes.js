@@ -10,11 +10,6 @@ app.get("/api/workouts", (req,res) => {
     })
 });
 
-// display excercise page
-app.get("/stats", (req,res) => {
-    res.sendFile(path.join(_dirname, "./public/stats.html"))
-});
-
 // update a workout by id
 app.put("/api/workouts/:id", (req, res) => {
     let input = req.body;
@@ -37,7 +32,7 @@ app.put("/api/workouts/:id", (req, res) => {
 });
 
 app.get("/api/workouts/range", (req,res) => {
-    db.Workout.fing({}).then(function (data) {
+    db.Workout.find({}).then(function (data) {
         res.json(data);
     })
 });
