@@ -1,8 +1,12 @@
 # Fitness-Tracker
 
-![Project Image](project-image-url)
+![Project Image](/public/assets/images/fitness-tracker.png)
 
->Short Project Blurb
+![Project Image](/public/assets/images/exercise.png)
+
+![Project Image](/public/assets/images/stats.png)
+
+>Feel the Burn!
 
 ---
 
@@ -22,7 +26,7 @@ What is this project about. Who is the User? What is the purpose of this applica
 #### Technologies
 
 - MongoDB
-- Technology 2
+- Mongoose
 
 ---
 
@@ -30,18 +34,18 @@ What is this project about. Who is the User? What is the purpose of this applica
 
 #### Installation
 
-
+Go to your terminal and type in NPM I to install.
 
 #### API Reference
+none
 
-```html
-    <p>dummy code</p>
-```
 [Back To The Top](#Fitness-Tracker)
 
 ---
 
 ## References
+- heroku - [Heroku](URL)
+
 [Back To The Top](#Fitness-Tracker)
 
 ---

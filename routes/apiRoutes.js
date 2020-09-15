@@ -14,7 +14,7 @@ app.get("/api/workouts", (req,res) => {
 app.put("/api/workouts/:id", (req, res) => {
     let input = req.body;
     
-    db.Workout.findByIdAndUpdate(req.parms.id,{
+    db.Workout.findByIdAndUpdate(req.params.id,{
         $push: {
             exercises:[{
                 "type": input.type,
