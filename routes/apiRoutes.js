@@ -38,8 +38,9 @@ app.get("/api/workouts/range", (req,res) => {
 });
 
 // add a new workout
-app.post("/api/workouts", ({body}, res) => {
-    db.Workout.create(body).then(function (data) {
+app.post("/api/workouts", (req, res) => {
+    db.Workout.create({day: new Date().setDate(new Date().getDate()),
+    }).then(function (data) {
         res.json(data);
     })
 });
